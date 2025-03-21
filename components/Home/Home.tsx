@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 import Hero from './Hero/Hero'
 import About from './about/About'
-import Services from './services/services'
+import Services from './services/Services'
 import Projects from './projects/Projects'
 import Skills from './skills/Skills'
 import Review from './Review/Review'
