@@ -4,7 +4,7 @@ import "./globals.css";
 import Responsivenav from "@/components/Home/Navbar/Responsivenav";
 import Footer from "@/components/Home/footer/Footer";
 import Scrolltotop from "@/components/Heper/Scrolltotop";
-import AnimatedCursor from "react-animated-cursor"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +33,7 @@ export default function RootLayout({
       >
 
         <div> 
-
+{/* 
         <AnimatedCursor
       innerSize={10}
       outerSize={30}
@@ -48,7 +48,7 @@ export default function RootLayout({
      outerStyle={{
       border : "3px solid white"
      }}
-    />
+    /> */}
         </div>
         <Responsivenav/>
         {children}
