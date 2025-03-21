@@ -26,22 +26,17 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <Carousel 
-      infinite 
-      arrows={true} 
-      autoPlay={true} 
-      autoPlaySpeed={5000} 
-      responsive={responsive}
-    >
-   {clientReviews.map((review)=>{
-return (
-  <div key={review.id}>  
-  <Reviewcard review ={review}/>
-  </div>
-) 
-   })}
-    </Carousel>
-  )
+    <Carousel infinite arrows autoPlay autoPlaySpeed={5000} responsive={responsive}>
+    {clientReviews.map((review) => (
+      <div key={review.id}>
+
+        <Reviewcard review ={review}/>
+
+      </div>
+    ))}
+  </Carousel>
+);
+  
 }
 
 export default Slider;

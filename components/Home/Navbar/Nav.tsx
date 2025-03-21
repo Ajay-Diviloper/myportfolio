@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constant/constant";
@@ -10,15 +10,16 @@ type Props = {
 };
 
 const Nav = ({ opennav }: Props) => {
-  const [navbg, setnavbg] = useState(false)
+  // const [navbg, setnavbg] = useState(false)
 
   useEffect(()=>{
 const handler = ()=> {
   if(window.screenY >= 90) {
-    setnavbg(true)
+
+    
   }
   if(window.screenY<90){
-    setnavbg(false)
+   
   }
 }
 window.addEventListener('scroll', handler)

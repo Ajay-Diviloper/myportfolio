@@ -13,7 +13,7 @@ const Blogcard = ({blog}:props) => {
      const {title,summary,date,image} = blog;
   return (
     <div className='bg-indigo-950 rounded-md overflow-hidden '>
-        <Image src={image} width={300} height={300} className="w-full object-cover"/>
+        <Image src={image} width={300} height={300} className="w-full object-cover" alt='image'/>
          
          <div className='p-6'> 
 <p className='rounded-sm px-6 py-1.5 text-white w-fit bg-rose-500'> News</p>

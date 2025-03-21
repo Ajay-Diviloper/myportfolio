@@ -4,7 +4,7 @@ const Contactform = () => {
   return (
     <div className='bg-[#140c1c] rounded-lg p-4 sm:p-10'>
       <h1 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem]'>
-         Let's work together </h1>
+         Lets work together </h1>
          <p className='text-gray-200 mt-3 lg:text-base text-xs'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit repudiandae, iste vero quaerat maxime fuga?</p>
     <form className='mt-8 block w-full overflow-hidden'> 
     <div className='  flex flex-col md:flex-row items-center justify-between gap-4'>
@@ -46,7 +46,7 @@ const Contactform = () => {
              </div> 
 
              <textarea className=' rounded w-full mt-5 bg-black placeholder:text-gray-600 px-4 outline-none py-3.5'
-             row= {7}
+        
              placeholder='Message'
              > 
 

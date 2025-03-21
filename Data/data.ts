@@ -179,6 +179,7 @@ export const skillsData = [
 
 export const clientReviews = [
   {
+    id: 1,
     name: "John Doe",
     clientreview:
       "Exceptional service! The team delivered exactly what we needed on time. Very professional",
@@ -187,6 +188,7 @@ export const clientReviews = [
     image: "/images/u1.jpg",
   },
   {
+    id: 2,
     name: "Jane Smith",
     clientreview:
       "Highly skilled developers who understand the client's vision and execute perfectly.",
@@ -195,6 +197,7 @@ export const clientReviews = [
     image: "/images/u2.jpg",
   },
   {
+    id: 3,
     name: "Michael Johnson",
     clientreview:
       "Great communication and excellent results. Our new site performs beautifully.",
@@ -203,6 +206,7 @@ export const clientReviews = [
     image: "/images/u3.jpg",
   },
   {
+    id: 4,
     name: "Emily Brown",
     clientreview:
       "Professional, efficient, and highly knowledgeable. Would definitely recommend their services!",
@@ -211,6 +215,7 @@ export const clientReviews = [
     image: "/images/u4.jpg",
   },
 ];
+
 
 export const blogs = [
   {

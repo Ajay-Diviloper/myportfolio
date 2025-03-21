@@ -10,7 +10,7 @@ import Skills from './skills/Skills'
 import Review from './Review/Review'
 import Blog from './blog/Blog'
 import Contact from './contact/Contact'
-import AOS from 'aos'
+// import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Home = () => {

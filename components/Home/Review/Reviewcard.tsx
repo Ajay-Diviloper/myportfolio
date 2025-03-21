@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { FaStar } from 'react-icons/fa6';
 type props = {
     review: {
+      id : number,
          name: string;
          clientreview: string;
-         rating: string;
+         rating: number;
          profession : string;
          image : string
 
