@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+'use client'
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constant/constant";
@@ -10,16 +12,16 @@ type Props = {
 };
 
 const Nav = ({ opennav }: Props) => {
-  // const [navbg, setnavbg] = useState(false)
+  const [navbg, setnavbg] = useState(false)
 
   useEffect(()=>{
 const handler = ()=> {
-  if(window.screenY >= 90) {
-
+  if(window.scrollY >= 90) {
+setnavbg(true)
     
   }
-  if(window.screenY<90){
-   
+  if(window.scrollY<90){
+   setnavbg(false)
   }
 }
 window.addEventListener('scroll', handler)
@@ -28,7 +30,12 @@ return ()=> {
 }
   }, [])
   return (
-    <nav className="fixed top-0 left-0 w-full h-[12vh] bg-blue-950 z-10 flex items-center justify-center px-4">
+
+    <nav
+    className={`fixed top-0 left-0 w-full h-[12vh] z-10 flex items-center justify-center px-4 transition-all duration-100 ${
+      navbg ? "bg-[#240b39] shadow-lg" : "bg-transparent"
+    }`}
+  >
       <div className="flex items-center h-full justify-between w-[100%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
     
