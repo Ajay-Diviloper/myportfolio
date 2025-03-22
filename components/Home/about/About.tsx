@@ -9,10 +9,10 @@ const About = () => {
    {/*sectionheading*/}
    <SectionHeading> About Company</SectionHeading>
 
-   <div className=' w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 items-center mt-20'>
+   <div className=' w-[90%] lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 items-center mt-20'>
 <div data-aos = 'fade-left' data-aos-anchor-placement ='top-center'>
-    <h1 className='text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl '> {aboutInfo.title}</h1>
-<p className='mt-6 text-base text-gray-500'> {aboutInfo.description}</p>
+    <h2 className='text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-semibold'> {aboutInfo.title}</h2>
+<p className='mt-6 text-base text-[15px] text-gray-500'> {aboutInfo.description}</p>
 <div className='mt-8'>
   <div className='flex gap-3 items-center space-x-2 mb-6'> 
     <div className='bg-blue-800 w-7 h-7 flex items-center justify-center flex-col' > 
@@ -21,19 +21,19 @@ const About = () => {
         </div>
         <p className='text-gray-300 text-sm sm:text-base md:text-lg font-bold '>Frontend Developement </p>
     </div> 
-    <div className='flex gap-3 items-center mb-6'> 
+    <div className='flex gap-3 items-center space-x-2 mb-6'> 
     <div className='bg-blue-800 w-7 h-7 flex items-center justify-center flex-col' > 
       <FaCheck className='text-white'/>
      
         </div>
-        <p className='text-gray-300 text-sm sm:text-base md:text-lg font-bold '>Frontend Developement </p>
+        <p className='text-gray-300 text-sm sm:text-base md:text-lg font-bold '>Backend Developement </p>
     </div> 
-    <div className='flex gap-3 items-center mb-6'> 
+    <div className='flex gap-3 items-center space-x-2 mb-6'> 
     <div className='bg-blue-800 w-7 h-7 flex items-center justify-center flex-col' > 
       <FaCheck className='text-white'/>
      
         </div>
-        <p className='text-gray-300 text-sm sm:text-base md:text-lg font-bold '>Frontend Developement </p>
+        <p className='text-gray-300 text-sm sm:text-base md:text-lg font-bold '>FullStack Developement </p>
     </div> 
    </div>
    
