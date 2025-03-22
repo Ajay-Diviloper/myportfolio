@@ -2,7 +2,7 @@ import { navLinks } from "@/constant/constant";
 import Link from "next/link";
 import React from "react";
 import { CgClose } from "react-icons/cg";
-
+import Image from "next/image";
 // Define props type
 type MobProps = {
   shownav: boolean;
@@ -11,12 +11,14 @@ type MobProps = {
 
 const MobileNav = ({ shownav, closenav }: MobProps) => {
   return (
+        // overlay 
+        <>
     <div
       className={`fixed inset-0 z-[1000] bg-black transition-opacity duration-300 ${
         shownav ? "opacity-70 visible" : "opacity-0 invisible delay-700"
       }`}
       onClick={closenav} // Closes when clicking outside menu
-    >
+    >   </div>
       {/* Mobile Menu Container */}
       <div
         className={`fixed left-0 top-0 h-full w-[80%] sm:w-[60%] bg-[#0f0715] z-[10000] flex flex-col 
@@ -28,15 +30,25 @@ const MobileNav = ({ shownav, closenav }: MobProps) => {
         {/* Close Button */}
         <CgClose
           onClick={closenav}
-          className="absolute top-4 right-6 sm:w-8 sm:h-8 w-6 text-white cursor-pointer"
+          className="absolute top-4 right-6 sm:w-8 sm:h-8 w-8 h-8 text-white cursor-pointer"
           aria-label="Close menu"
         />
 
         {/* Navigation Links */}
-        <nav className="flex flex-col items-center space-y-4 text-white">
+        <nav className="flex flex-col items-center  justify-baseline space-y-4 text-white">
+
+           <Image
+                    src="/images/logo.png"
+                    alt="Company Logo"
+                    width={170}
+                    height={170}
+                    priority
+                    className="text-left"
+                  />
           {navLinks.map((navlink) => (
             <Link key={navlink.id} href={navlink.url} className="text-lg">
-              {navlink.label}
+              <p className="nav_link text-white"> {navlink.label} </p>
+             
             </Link>
           ))}
         </nav>
@@ -48,7 +60,7 @@ const MobileNav = ({ shownav, closenav }: MobProps) => {
           </button>
         </div>
       </div>
-    </div>
+      </>
   );
 };
 

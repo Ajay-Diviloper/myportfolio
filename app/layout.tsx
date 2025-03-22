@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Sora } from "next/font/google";
 import "./globals.css";
 import Responsivenav from "@/components/Home/Navbar/Responsivenav";
 import Footer from "@/components/Home/footer/Footer";
 import Scrolltotop from "@/components/Heper/Scrolltotop";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +14,17 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
   title: "Full stack",
@@ -29,31 +39,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="custom-scrollbar">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${sora.variable} antialiased`}
       >
-
-        <div> 
-{/* 
-        <AnimatedCursor
-      innerSize={10}
-      outerSize={30}
-      
-      outerAlpha={0}
-      innerScale={0.7}
-      outerScale={2}
-      innerStyle={
- {background: "white"}
-      }
-     
-     outerStyle={{
-      border : "3px solid white"
-     }}
-    /> */}
-        </div>
-        <Responsivenav/>
+        <Responsivenav />
         {children}
-        <Footer/>
-        <Scrolltotop/>
+        <Footer />
+        <Scrolltotop />
       </body>
     </html>
   );
