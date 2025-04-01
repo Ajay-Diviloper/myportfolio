@@ -117,10 +117,12 @@ export const projectData = [
 export const skillsData = [
   {
     id: 1,
-    title: "React",
-    image: "/images/react.svg",
-    percent: "90%",
+    title: "HTML",
+    image: "/images/html.svg",
+    percent: "67%",
   },
+
+ 
   {
     id: 2,
     title: "CSS",
@@ -137,14 +139,15 @@ export const skillsData = [
     id: 4,
     title: "TypeScript",
     image: "/images/ts.svg",
-    percent: "67%",
+    percent: "50%",
   },
   {
-    id: 5,
-    title: "HTML",
-    image: "/images/html.svg",
-    percent: "67%",
+    id: 4,
+    title: "Wordpress",
+    image: "/images/wordpress.svg",
+    percent: "50%",
   },
+
   {
     id: 6,
     title: "Node JS",
@@ -158,23 +161,13 @@ export const skillsData = [
     percent: "65%",
   },
   {
-    id: 8,
-    title: "Python",
-    image: "/images/python.svg",
-    percent: "55%",
+    id: 5,
+    title: "React",
+    image: "/images/react.svg",
+    percent: "80%",
   },
-  {
-    id: 9,
-    title: "Firebase",
-    image: "/images/firebase.svg",
-    percent: "75%",
-  },
-  {
-    id: 10,
-    title: "Vue",
-    image: "/images/vue.svg",
-    percent: "35%",
-  },
+
+ 
 ];
 
 export const clientReviews = [
